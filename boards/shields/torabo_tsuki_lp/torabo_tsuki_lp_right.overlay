@@ -7,12 +7,20 @@
 &pointing_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                        <&zip_temp_layer 4 1000>;
+
+    // Scroll layer: while layer 5 is held, ball movement becomes natural scrolling
+    scroller {
+        layers = <5>;
+        input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+                           <&zip_xy_to_scroll_mapper>;
+        process-next;
+    };
 };
 
-// Auto mouse layer: keep layer 4 active while pressing clicks (J/K/L) or modifiers
+// Auto mouse layer: keep layer 4 active while pressing clicks (J/K/L), scroll (;) or modifiers
 &zip_temp_layer {
     require-prior-idle-ms = <300>;
-    excluded-positions = <25 26 27 28 33 34 35 38 39 51 52 53 54 55>;
+    excluded-positions = <24 25 26 27 28 33 34 35 36 38 39 51 52 53 54>;
 };
 
 &size_s_transform {

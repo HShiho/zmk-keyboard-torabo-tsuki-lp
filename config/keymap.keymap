@@ -26,30 +26,30 @@
         layer_0 {
             bindings = <
 &none      &none             &none           &none           &none             &none                            &none        &none  &none      &none         &none         &none
-&kp TAB    &kp Q             &kp W           &kp E           &kp R             &kp T                            &kp Y        &kp U  &kp I      &kp O         &kp P         &kp BSPC
-&kp CAPS   &mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G      &mkp LCLK  &mkp RCLK  &kp H        &kp J  &kp K      &kp L         &kp ENTER     &kp BACKSPACE
-&kp LSHFT  &mt LEFT_SHIFT Z  &kp X           &kp C           &kp V             &kp B      &kp SPACE  &kp RET    &kp N        &kp M  &kp COMMA  &kp DOT       &kp SLASH     &kp RSHFT
-&kp LCTRL  &kp LCTRL         &kp LGUI        &kp LALT        &mo 1             &kp LANG2  &kp SPACE  &kp MINUS  &lt 2 LANG1  &none  &none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
+&kp TAB    &kp Q             &kp W           &kp E           &kp R             &kp T                            &kp Y        &kp U  &kp I      &kp O         &kp P         &kp DEL
+&kp LCTRL  &mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G      &none      &none      &kp H        &kp J  &kp K      &kp L         &kp ENTER     &kp BACKSPACE
+&kp LSHFT  &mt LEFT_SHIFT Z  &kp X           &kp C           &kp V             &kp B      &kp C_MUTE &kp LC(UP) &kp N        &kp M  &kp COMMA  &kp DOT       &kp SLASH     &kp RSHFT
+&kp LGUI   &kp LALT          &kp LGUI        &kp ESC         &mo 1             &kp LANG2  &kp SPACE  &kp MINUS  &lt 2 LANG1  &none  &none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &none             &none             &none             &none             &none                         &none             &none             &none              &none            &none          &none
-&none  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp N5                        &kp NUMBER_6      &kp N7            &kp N8             &kp N9           &kp N0         &none
-&none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)  &none  &none      &kp RS(NUMBER_6)  &kp RS(N7)        &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp SEMICOLON  &none
-&none  &none             &none             &none             &none             &none       &none  &none      &kp UNDERSCORE    &kp LEFT_BRACKET  &kt RS(N8)         &kt RS(N9)       &kp SQT        &none
-&none  &none             &none             &none             &none             &none       &none  &kp EQUAL  &kp INT_YEN       &none             &none              &none            &none          &none
+&none      &none         &none         &none          &none         &none                           &none           &none       &none          &none       &none            &none
+&none      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                          &kp NUMBER_6    &kp N7      &kp N8         &kp N9      &kp N0           &kp LS(INT_YEN)
+&none      &kp LBKT      &kp LS(N4)    &kp LS(N3)     &kp LS(N5)    &kp LS(N6)    &none  &none      &kp LS(N2)      &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(INT_RO)   &kp LA(INT_YEN)
+&kp LSHFT  &kp LS(N1)    &kp LS(SEMI)  &kp LS(EQUAL)  &kp LS(SQT)   &kp LS(LBKT)  &none  &none      &kp UNDERSCORE  &kp RBKT    &kp SEMICOLON  &kp SQT     &kp NON_US_HASH  &none
+&none      &none         &none         &none          &none         &none         &none  &kp EQUAL  &kp INT_YEN     &none       &none          &none       &none            &none
             >;
         };
 
         layer_2 {
             bindings = <
-&none  &none             &none         &none         &none           &none                &none     &none     &none   &none            &none  &none
-&none  &none             &none         &none         &none           &none                &none     &none     &none   &none            &none  &none
-&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT_ARROW  &none  &none
-&none  &kp LEFT_SHIFT    &none         &none         &none           &none  &none  &none  &none     &none     &none   &none            &none  &none
-&none  &none             &none         &none         &none           &none  &none  &none  &none     &none     &none   &none            &none  &none
+&none  &none             &none         &none          &none           &none                &none     &none     &none   &none            &none  &none
+&none  &none             &none         &none          &none           &none                &none     &none     &none   &none            &none  &none
+&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI   &kp LEFT_SHIFT  &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT_ARROW  &none  &none
+&none  &kp LEFT_SHIFT    &kp LG(SEMI)  &kp LG(MINUS)  &none           &none  &none  &none  &none     &none     &none   &none            &none  &none
+&none  &none             &none         &none          &none           &none  &none  &none  &none     &none     &none   &none            &none  &none
             >;
         };
 
@@ -67,9 +67,19 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &mo 5   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
