@@ -31,6 +31,12 @@
             layers = <2>;
         };
 
+        bt_clear_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <45 46>;
+            layers = <2>;
+        };
+
         esc {
             bindings = <&kp ESC>;
             key-positions = <34 35>;
@@ -43,7 +49,7 @@
         layer_0 {
             bindings = <
 &none      &none              &none            &none            &none              &none                              &none        &none  &none      &none         &none         &none
-&kp TAB    &kp Q              &kp W            &kp E            &kp R              &kp T                              &kp Y        &kp U  &kp I      &kp O         &kp P         &kp DEL
+&kp TAB    &kp Q              &kp W            &hml LCTRL E     &kp R              &kp T                              &kp Y        &kp U  &kp I      &kp O         &kp P         &kp DEL
 &kp LCTRL  &hml LCTRL A       &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G      &none       &none       &kp H        &kp J  &kp K      &kp L         &kp ENTER     &kp BACKSPACE
 &kp LSHFT  &hml LEFT_SHIFT Z  &kp X            &kp C            &kp V              &kp B      &kp C_MUTE  &kp LC(UP)  &kp N        &kp M  &kp COMMA  &kp DOT       &kp SLASH     &kp RSHFT
 &kp LGUI   &kp LALT           &kp LGUI         &kp ESC          &mo 1              &kp SPACE  &kp LANG2   &kp MINUS   &lt 2 LANG1  &none  &none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
@@ -56,7 +62,7 @@
 &none      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                          &kp NUMBER_6    &kp N7      &kp N8         &kp N9      &kp N0           &kp LS(INT_YEN)
 &none      &kp LBKT      &kp LS(N4)    &kp LS(N3)     &kp LS(N5)    &kp LS(N6)    &none  &none      &kp LS(N2)      &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(INT_RO)   &kp LA(INT_YEN)
 &kp LSHFT  &kp LS(N1)    &kp LS(SEMI)  &kp LS(EQUAL)  &kp LS(SQT)   &kp LS(LBKT)  &none  &none      &kp UNDERSCORE  &kp RBKT    &kp SEMICOLON  &kp SQT     &kp NON_US_HASH  &none
-&none      &none         &none         &none          &none         &none         &none  &kp EQUAL  &kp INT_YEN     &none       &none          &none       &none            &bt BT_CLR_ALL
+&none      &none         &none         &none          &none         &none         &none  &kp EQUAL  &kp INT_YEN     &none       &none          &none       &none            &none
             >;
         };
 
