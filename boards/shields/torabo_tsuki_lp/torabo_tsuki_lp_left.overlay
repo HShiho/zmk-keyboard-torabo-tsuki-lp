@@ -19,5 +19,5 @@
 // Auto mouse layer: keep layer 4 active while pressing clicks (K/L/;), scroll (J) or modifiers
 &zip_temp_layer {
     require-prior-idle-ms = <300>;
-    excluded-positions = <15 24 25 26 27 28 33 34 35 36 38 39 48 49 50 52 53 54>;
+    excluded-positions = <15 23 24 25 26 27 28 33 34 35 36 38 39 48 49 50 52 53 54>;
 };
